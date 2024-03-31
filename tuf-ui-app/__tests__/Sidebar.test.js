@@ -4,6 +4,6 @@ import Sidebar from "../src/app/components/Sidebar/Sidebar.js";
 describe("Sidebar", () => {
     it("renders the sidebar", () => {
         render(<Sidebar />);
-        expect(screen.getByTestId("sidebar")).toBeInTheDocument();
+        expect(screen.getByText("Sidebar")).toBeInTheDocument();
     });
 });
