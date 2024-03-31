@@ -1,12 +1,31 @@
+"use client";
+
 import React from "react";
+import dynamic from 'next/dynamic';
+const DateRangePicker = dynamic(() => import('react-date-range')
+    .then((mod) => mod.DateRangePicker), {ssr: false,});
+import 'react-date-range/dist/styles.css';
+import 'react-date-range/dist/theme/default.css';
+
 const Sidebar = () => {
+    const [state, setState] = React.useState([
+        {
+          startDate: new Date(),
+          endDate: new Date(),
+          key: 'selection',
+        },
+      ]);
+
     return (
     <div className="sidebar">
         <h4>Sidebar</h4>
 
         {/* date range picker */}
         <div className="date-picker">
-            {/* DateRangePicker component will be here */}
+            <DateRangePicker
+                ranges={[state[0]]}
+                onChange={(item) => setState([item.selection])}
+            />
         </div>
 
         {/* Toggle Button */}

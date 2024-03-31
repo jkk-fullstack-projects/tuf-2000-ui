@@ -11,8 +11,10 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "date-fns": "^3.6.0",
     "next": "14.1.4",
     "react": "^18",
+    "react-date-range": "^2.0.0-alpha.4",
     "react-dom": "^18"
   },
   "devDependencies": {
