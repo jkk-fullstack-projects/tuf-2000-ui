@@ -14,12 +14,19 @@ const Sidebar = () => {
           endDate: new Date(),
           key: 'selection',
         },
-      ]);
+    ]);
+
+    const handleFetchData = () => {
+        // Fetch data from the API
+        console.log('Mocking Fetch data from the API');
+        console.log(state[0].startDate, state[0].endDate);
+        // a function call will be added to fetch data based on selected dates
+    };
+    
 
     return (
     <div className="sidebar">
         <h4>Sidebar</h4>
-
         {/* date range picker */}
         <div className="date-picker">
             <DateRangePicker
@@ -27,7 +34,7 @@ const Sidebar = () => {
                 onChange={(item) => setState([item.selection])}
             />
         </div>
-
+        <button onClick={handleFetchData}>Get Meter Data</button>
         {/* Toggle Button */}
         <div className="toggle-button">
             {/* Toggle button component will be here */}
