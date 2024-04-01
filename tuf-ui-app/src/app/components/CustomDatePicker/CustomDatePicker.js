@@ -38,7 +38,7 @@ return (
         </button>
         {showCalendar && (
             <DateRangePicker
-                ranges={dateRange}
+                ranges={[dateRange]}
                 onChange={(item) => {
                     setDateRange([item.selection]);
                     onDatesChange(item.selection);

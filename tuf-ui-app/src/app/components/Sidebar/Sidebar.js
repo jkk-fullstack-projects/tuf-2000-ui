@@ -5,13 +5,14 @@
 
 import React, { useState } from "react";
 import CustomDatePicker from "../CustomDatePicker/CustomDatePicker";
+import DataFetcher from "../DataFetcher/DataFetcher";
 import ShowRawData from "../ShowRawData/ShowRawData";
 import mockData from '../../../../mock_data/Mocked_meter_data.json';
 
 console.log('Mocked Data import:', mockData)
 
 const Sidebar = () => {
-    const [state, setState] = useState([
+    const [dateRange, setDateRange] = useState([
         {
           startDate: new Date(),
           endDate: new Date(),
@@ -20,31 +21,13 @@ const Sidebar = () => {
     ]);
     const [fetchedData, setFetchedData] = useState(null);
 
-    const handleFetchData = () => {
-        // Simulate fetch data from the API
-        console.log('Mocking Fetch data from the API');
-        console.log(state[0].startDate, state[0].endDate);
-        // a function call will be added to fetch data based on selected dates
-        setTimeout(() => {
-            // Directly use the mock data
-            setFetchedData(mockData);
-            console.log('fetchedData', fetchedData)
-
-            // now the data can be passed to another component
-          }, 1000); // Simulate network delay
-    };
-    
-
     return (
     <div className="sidebar">
         <h4>Sidebar</h4>
         <div className="date-picker">
-            <CustomDatePicker onDatesChange={handleFetchData}
-            />
+            <CustomDatePicker onDatesChange={(range) => setDateRange(range)}/>
         </div>
-        <div className="fetch-data-button">
-            <button onClick={handleFetchData}>Get Meter Data</button>
-        </div>
+        <DataFetcher dateRange={dateRange} />
         {/* Toggle Button */}
         <div className="toggle-button">
             {/* Toggle button component will be here */}
