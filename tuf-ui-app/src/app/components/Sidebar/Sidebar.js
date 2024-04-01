@@ -9,6 +9,7 @@ const DateRangePicker = dynamic(() => import('react-date-range')
     .then((mod) => mod.DateRangePicker), {ssr: false,});
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
+import ShowRawData from "../ShowRawData/ShowRawData";
 import mockData from '../../../../mock_data/Mocked_meter_data.json';
 
 console.log('Mocked Data import:', mockData)
@@ -60,14 +61,7 @@ const Sidebar = () => {
             {/* Timestamps list will be rendered here */}
         </div>
         {fetchedData && (
-        <div className="fetched-data">
-            <h5>Fetched Data:</h5>
-            {fetchedData.data.map((item, index) => (
-                <div key={index}>
-                    REGISTER: {item.register} VARIABLE: {item.variableName}: {item.value} {item.unit}
-                </div>
-            ))}
-        </div>
+            <ShowRawData fetchedData={fetchedData} />
         )}
     </div>
     );
