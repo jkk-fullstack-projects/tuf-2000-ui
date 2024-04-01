@@ -1,23 +1,599 @@
 {
-    "timestamp": "2017-01-11T19:12:00Z",
-    "data": [
+  "timestamp": "2024-04-01T11:16:52.583065",
+  "data": [
       {
-        "register": "0021-0022",
-        "variableName": "Negative energy accumulator",
-        "value": "-56",
-        "unit": ""
+          "register": "0001",
+          "variableName": "Negative energy accumulator",
+          "value": "-47.59",
+          "unit": "C"
       },
       {
-        "register": "0033-0034",
-        "variableName": "Temperature #1/inlet",
-        "value": "7.101173400878906",
-        "unit": "C"
+          "register": "0002",
+          "variableName": "Temperature #1/inlet",
+          "value": "48.3",
+          "unit": ""
       },
       {
-        "register": "1437",
-        "variableName": "Signal Quality",
-        "value": "38",
-        "unit": ""
+          "register": "0003",
+          "variableName": "Temperature #1/inlet",
+          "value": "-0.52",
+          "unit": "C"
+      },
+      {
+          "register": "0004",
+          "variableName": "Negative energy accumulator",
+          "value": "-81.67",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0005",
+          "variableName": "Negative energy accumulator",
+          "value": "-59.34",
+          "unit": "C"
+      },
+      {
+          "register": "0006",
+          "variableName": "Signal Quality",
+          "value": "99.68",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0007",
+          "variableName": "Signal Quality",
+          "value": "-69.51",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0008",
+          "variableName": "Temperature #1/inlet",
+          "value": "75.39",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0009",
+          "variableName": "Negative energy accumulator",
+          "value": "-65.9",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0010",
+          "variableName": "Signal Quality",
+          "value": "-45.31",
+          "unit": "C"
+      },
+      {
+          "register": "0011",
+          "variableName": "Temperature #1/inlet",
+          "value": "64.34",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0012",
+          "variableName": "Temperature #1/inlet",
+          "value": "21.63",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0013",
+          "variableName": "Negative energy accumulator",
+          "value": "84.19",
+          "unit": ""
+      },
+      {
+          "register": "0014",
+          "variableName": "Temperature #1/inlet",
+          "value": "3.96",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0015",
+          "variableName": "Negative energy accumulator",
+          "value": "21.2",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0016",
+          "variableName": "Signal Quality",
+          "value": "88.78",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0017",
+          "variableName": "Temperature #1/inlet",
+          "value": "71.17",
+          "unit": "C"
+      },
+      {
+          "register": "0018",
+          "variableName": "Negative energy accumulator",
+          "value": "59.02",
+          "unit": "C"
+      },
+      {
+          "register": "0019",
+          "variableName": "Negative energy accumulator",
+          "value": "47.55",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0020",
+          "variableName": "Signal Quality",
+          "value": "4.71",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0021",
+          "variableName": "Temperature #1/inlet",
+          "value": "-45.29",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0022",
+          "variableName": "Signal Quality",
+          "value": "53.44",
+          "unit": "C"
+      },
+      {
+          "register": "0023",
+          "variableName": "Signal Quality",
+          "value": "94.14",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0024",
+          "variableName": "Temperature #1/inlet",
+          "value": "-88.65",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0025",
+          "variableName": "Negative energy accumulator",
+          "value": "47.39",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0026",
+          "variableName": "Temperature #1/inlet",
+          "value": "-2.57",
+          "unit": "C"
+      },
+      {
+          "register": "0027",
+          "variableName": "Signal Quality",
+          "value": "35.41",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0028",
+          "variableName": "Temperature #1/inlet",
+          "value": "57.52",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0029",
+          "variableName": "Negative energy accumulator",
+          "value": "76.27",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0030",
+          "variableName": "Temperature #1/inlet",
+          "value": "12.36",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0031",
+          "variableName": "Temperature #1/inlet",
+          "value": "82.71",
+          "unit": "C"
+      },
+      {
+          "register": "0032",
+          "variableName": "Temperature #1/inlet",
+          "value": "-92.52",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0033",
+          "variableName": "Temperature #1/inlet",
+          "value": "-8.09",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0034",
+          "variableName": "Temperature #1/inlet",
+          "value": "-84.38",
+          "unit": "C"
+      },
+      {
+          "register": "0035",
+          "variableName": "Temperature #1/inlet",
+          "value": "65.67",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0036",
+          "variableName": "Signal Quality",
+          "value": "-64.91",
+          "unit": ""
+      },
+      {
+          "register": "0037",
+          "variableName": "Temperature #1/inlet",
+          "value": "-17.31",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0038",
+          "variableName": "Signal Quality",
+          "value": "-52.67",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0039",
+          "variableName": "Temperature #1/inlet",
+          "value": "58.17",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0040",
+          "variableName": "Signal Quality",
+          "value": "-70.55",
+          "unit": ""
+      },
+      {
+          "register": "0041",
+          "variableName": "Temperature #1/inlet",
+          "value": "21.07",
+          "unit": "C"
+      },
+      {
+          "register": "0042",
+          "variableName": "Signal Quality",
+          "value": "-47.71",
+          "unit": "C"
+      },
+      {
+          "register": "0043",
+          "variableName": "Signal Quality",
+          "value": "-47.29",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0044",
+          "variableName": "Temperature #1/inlet",
+          "value": "60.42",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0045",
+          "variableName": "Signal Quality",
+          "value": "-4.15",
+          "unit": "C"
+      },
+      {
+          "register": "0046",
+          "variableName": "Temperature #1/inlet",
+          "value": "26.89",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0047",
+          "variableName": "Temperature #1/inlet",
+          "value": "89.55",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0048",
+          "variableName": "Negative energy accumulator",
+          "value": "98.04",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0049",
+          "variableName": "Temperature #1/inlet",
+          "value": "82.01",
+          "unit": "C"
+      },
+      {
+          "register": "0050",
+          "variableName": "Signal Quality",
+          "value": "-39.41",
+          "unit": ""
+      },
+      {
+          "register": "0051",
+          "variableName": "Temperature #1/inlet",
+          "value": "-22.49",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0052",
+          "variableName": "Temperature #1/inlet",
+          "value": "32.35",
+          "unit": "C"
+      },
+      {
+          "register": "0053",
+          "variableName": "Signal Quality",
+          "value": "18.7",
+          "unit": ""
+      },
+      {
+          "register": "0054",
+          "variableName": "Signal Quality",
+          "value": "-35.37",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0055",
+          "variableName": "Temperature #1/inlet",
+          "value": "29.38",
+          "unit": "C"
+      },
+      {
+          "register": "0056",
+          "variableName": "Negative energy accumulator",
+          "value": "-64.45",
+          "unit": "C"
+      },
+      {
+          "register": "0057",
+          "variableName": "Temperature #1/inlet",
+          "value": "-6.55",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0058",
+          "variableName": "Negative energy accumulator",
+          "value": "58.47",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0059",
+          "variableName": "Negative energy accumulator",
+          "value": "-9.47",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0060",
+          "variableName": "Negative energy accumulator",
+          "value": "22.67",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0061",
+          "variableName": "Negative energy accumulator",
+          "value": "-86.08",
+          "unit": ""
+      },
+      {
+          "register": "0062",
+          "variableName": "Signal Quality",
+          "value": "-83.33",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0063",
+          "variableName": "Temperature #1/inlet",
+          "value": "12.91",
+          "unit": ""
+      },
+      {
+          "register": "0064",
+          "variableName": "Negative energy accumulator",
+          "value": "-14.89",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0065",
+          "variableName": "Signal Quality",
+          "value": "3.61",
+          "unit": ""
+      },
+      {
+          "register": "0066",
+          "variableName": "Temperature #1/inlet",
+          "value": "-74.24",
+          "unit": ""
+      },
+      {
+          "register": "0067",
+          "variableName": "Temperature #1/inlet",
+          "value": "-63.3",
+          "unit": "C"
+      },
+      {
+          "register": "0068",
+          "variableName": "Negative energy accumulator",
+          "value": "36.0",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0069",
+          "variableName": "Temperature #1/inlet",
+          "value": "29.64",
+          "unit": "C"
+      },
+      {
+          "register": "0070",
+          "variableName": "Negative energy accumulator",
+          "value": "-29.17",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0071",
+          "variableName": "Negative energy accumulator",
+          "value": "-31.06",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0072",
+          "variableName": "Signal Quality",
+          "value": "-60.46",
+          "unit": ""
+      },
+      {
+          "register": "0073",
+          "variableName": "Signal Quality",
+          "value": "-8.01",
+          "unit": "C"
+      },
+      {
+          "register": "0074",
+          "variableName": "Negative energy accumulator",
+          "value": "-93.68",
+          "unit": ""
+      },
+      {
+          "register": "0075",
+          "variableName": "Temperature #1/inlet",
+          "value": "-79.59",
+          "unit": ""
+      },
+      {
+          "register": "0076",
+          "variableName": "Negative energy accumulator",
+          "value": "-41.47",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0077",
+          "variableName": "Temperature #1/inlet",
+          "value": "-57.47",
+          "unit": ""
+      },
+      {
+          "register": "0078",
+          "variableName": "Negative energy accumulator",
+          "value": "-98.47",
+          "unit": ""
+      },
+      {
+          "register": "0079",
+          "variableName": "Negative energy accumulator",
+          "value": "-68.81",
+          "unit": "C"
+      },
+      {
+          "register": "0080",
+          "variableName": "Signal Quality",
+          "value": "16.55",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0081",
+          "variableName": "Negative energy accumulator",
+          "value": "9.47",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0082",
+          "variableName": "Negative energy accumulator",
+          "value": "81.6",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0083",
+          "variableName": "Temperature #1/inlet",
+          "value": "62.63",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0084",
+          "variableName": "Signal Quality",
+          "value": "61.27",
+          "unit": "C"
+      },
+      {
+          "register": "0085",
+          "variableName": "Temperature #1/inlet",
+          "value": "-92.58",
+          "unit": ""
+      },
+      {
+          "register": "0086",
+          "variableName": "Negative energy accumulator",
+          "value": "25.77",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0087",
+          "variableName": "Temperature #1/inlet",
+          "value": "-34.02",
+          "unit": ""
+      },
+      {
+          "register": "0088",
+          "variableName": "Temperature #1/inlet",
+          "value": "47.58",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0089",
+          "variableName": "Negative energy accumulator",
+          "value": "18.99",
+          "unit": "C"
+      },
+      {
+          "register": "0090",
+          "variableName": "Signal Quality",
+          "value": "15.09",
+          "unit": ""
+      },
+      {
+          "register": "0091",
+          "variableName": "Negative energy accumulator",
+          "value": "55.84",
+          "unit": "C"
+      },
+      {
+          "register": "0092",
+          "variableName": "Temperature #1/inlet",
+          "value": "-60.54",
+          "unit": "C"
+      },
+      {
+          "register": "0093",
+          "variableName": "Temperature #1/inlet",
+          "value": "-72.21",
+          "unit": "C"
+      },
+      {
+          "register": "0094",
+          "variableName": "Negative energy accumulator",
+          "value": "-89.5",
+          "unit": "Cubic meter / second"
+      },
+      {
+          "register": "0095",
+          "variableName": "Temperature #1/inlet",
+          "value": "44.16",
+          "unit": "C"
+      },
+      {
+          "register": "0096",
+          "variableName": "Signal Quality",
+          "value": "92.45",
+          "unit": "American gallon/minute"
+      },
+      {
+          "register": "0097",
+          "variableName": "Temperature #1/inlet",
+          "value": "-40.18",
+          "unit": "C"
+      },
+      {
+          "register": "0098",
+          "variableName": "Temperature #1/inlet",
+          "value": "-62.91",
+          "unit": ""
+      },
+      {
+          "register": "0099",
+          "variableName": "Signal Quality",
+          "value": "24.1",
+          "unit": "American gallon/minute"
       }
-    ]
+  ]
 }

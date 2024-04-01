@@ -30,8 +30,9 @@ const Sidebar = () => {
         // a function call will be added to fetch data based on selected dates
         setTimeout(() => {
             // Directly use the mock data
-            console.log('Fetched Data:', mockData)
             setFetchedData(mockData);
+            console.log('fetchedData', fetchedData)
+
             // now the data can be passed to another component
           }, 1000); // Simulate network delay
     };
@@ -40,7 +41,6 @@ const Sidebar = () => {
     return (
     <div className="sidebar">
         <h4>Sidebar</h4>
-        {/* date range picker */}
         <div className="date-picker">
             <DateRangePicker
                 ranges={[state[0]]}
@@ -62,10 +62,9 @@ const Sidebar = () => {
         {fetchedData && (
         <div className="fetched-data">
             <h5>Fetched Data:</h5>
-        {/* fetched data rendered here, adding a component later */}
             {fetchedData.data.map((item, index) => (
                 <div key={index}>
-                    {item.variableName}: {item.value} {item.unit}
+                    REGISTER: {item.register} VARIABLE: {item.variableName}: {item.value} {item.unit}
                 </div>
             ))}
         </div>
