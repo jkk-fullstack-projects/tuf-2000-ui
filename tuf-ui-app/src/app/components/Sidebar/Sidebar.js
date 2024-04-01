@@ -4,11 +4,7 @@
 // to render the component on the client-side
 
 import React, { useState } from "react";
-import dynamic from 'next/dynamic';
-const DateRangePicker = dynamic(() => import('react-date-range')
-    .then((mod) => mod.DateRangePicker), {ssr: false,});
-import 'react-date-range/dist/styles.css';
-import 'react-date-range/dist/theme/default.css';
+import CustomDatePicker from "../CustomDatePicker/CustomDatePicker";
 import ShowRawData from "../ShowRawData/ShowRawData";
 import mockData from '../../../../mock_data/Mocked_meter_data.json';
 
@@ -43,9 +39,7 @@ const Sidebar = () => {
     <div className="sidebar">
         <h4>Sidebar</h4>
         <div className="date-picker">
-            <DateRangePicker
-                ranges={[state[0]]}
-                onChange={(item) => setState([item.selection])}
+            <CustomDatePicker onDatesChange={handleFetchData}
             />
         </div>
         <div className="fetch-data-button">
