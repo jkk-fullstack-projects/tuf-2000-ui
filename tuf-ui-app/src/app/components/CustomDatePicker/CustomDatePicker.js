@@ -17,17 +17,20 @@ const CustomDatePicker = ({ onDatesChange }) => {
     ]);
     const [showCalendar, setShowCalendar] = useState(true);
 
-    const handleClearDates = () => {
-        console.log('Clearing Dates');
-        const resetRange = { startDate: new Date(), endDate: new Date(), key: 'selection' };
-        setDateRange([resetRange]);
-        onDatesChange(resetRange);
+    const handleSelect = (ranges) => {
+        const newRange = [ranges.selection];
+        setDateRange(newRange);
+        onDatesChange(ranges.selection);
     };
 
-    const toggleShowCalendar = () => {
-        console.log('Toggling calendar visibility');
-        setShowCalendar(!showCalendar);
+    const handleClearDates = () => {
+        console.log('Clearing Dates');
+        const resetRange = [{ startDate: new Date(), endDate: new Date(), key: 'selection' }];
+        setDateRange(resetRange); // set the state with an array of new range
+        onDatesChange(resetRange[0]); // pass the first element of the array
     };
+
+    const toggleShowCalendar = () => setShowCalendar(!showCalendar);
 
     return (
         <div className="date-picker">
@@ -38,16 +41,13 @@ const CustomDatePicker = ({ onDatesChange }) => {
                 {showCalendar ? 'Hide Calendar' : 'Show Calendar'}
             </button>
             {showCalendar && (
-                <DateRangePicker
-                    ranges={[dateRange]}
-                    onChange={(item) => {
-                        setDateRange([item.selection]);
-                        onDatesChange(item.selection);
-                    }}
+                <DateRangePicker 
+                    ranges={dateRange} // this is an array of objects
+                    onChange={handleSelect}
                 />
-                )}
-            </div>
-        );
+            )}
+        </div>
+    );
 };
 
 export default CustomDatePicker;
