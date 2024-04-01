@@ -1,0 +1,23 @@
+{
+    "timestamp": "2017-01-11T19:12:00Z",
+    "data": [
+      {
+        "register": "0021-0022",
+        "variableName": "Negative energy accumulator",
+        "value": "-56",
+        "unit": ""
+      },
+      {
+        "register": "0033-0034",
+        "variableName": "Temperature #1/inlet",
+        "value": "7.101173400878906",
+        "unit": "C"
+      },
+      {
+        "register": "1437",
+        "variableName": "Signal Quality",
+        "value": "38",
+        "unit": ""
+      }
+    ]
+}
