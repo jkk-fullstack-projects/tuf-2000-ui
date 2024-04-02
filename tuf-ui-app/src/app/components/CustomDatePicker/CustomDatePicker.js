@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import dynamic from 'next/dynamic';
+import { DataContext } from '../../../context/DataContext';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 
@@ -7,27 +8,18 @@ import 'react-date-range/dist/theme/default.css';
 const DateRangePicker = dynamic(() => import('react-date-range')
     .then((mod) => mod.DateRangePicker), {ssr: false });
 
-const CustomDatePicker = ({ onDatesChange }) => {
-    const [dateRange, setDateRange] = useState([
-        {
-          startDate: new Date(),
-          endDate: new Date(),
-          key: 'selection',
-        },
-    ]);
+const CustomDatePicker = () => {
+    const { dateRange, setDateRange } = useContext(DataContext);
     const [showCalendar, setShowCalendar] = useState(true);
 
     const handleSelect = (ranges) => {
-        const newRange = [ranges.selection];
-        setDateRange(newRange);
-        onDatesChange(ranges.selection);
+        setDateRange([ranges.selection]); // Update the date range in context
     };
 
     const handleClearDates = () => {
         console.log('Clearing Dates');
         const resetRange = [{ startDate: new Date(), endDate: new Date(), key: 'selection' }];
         setDateRange(resetRange); // set the state with an array of new range
-        onDatesChange(resetRange[0]); // pass the first element of the array
     };
 
     const toggleShowCalendar = () => setShowCalendar(!showCalendar);
@@ -42,7 +34,7 @@ const CustomDatePicker = ({ onDatesChange }) => {
             </button>
             {showCalendar && (
                 <DateRangePicker 
-                    ranges={dateRange} // this is an array of objects
+                    ranges={dateRange} 
                     onChange={handleSelect}
                 />
             )}
