@@ -26,6 +26,30 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 250px; 
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #f4f4f4; 
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    flex: 0 0 100px; /* Smaller sidebar for mobile */
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

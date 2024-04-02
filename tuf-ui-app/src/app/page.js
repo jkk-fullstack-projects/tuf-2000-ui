@@ -6,9 +6,13 @@ import DataFetcher from "./components/DataFetcher/DataFetcher";
 export default function Home() {
   return (
     <DataProvider>
-      <Sidebar />
-      <DataFetcher />
-      <ShowRawData />
+      <div className="app-container">
+        <Sidebar />
+        <div className="main-content">
+          <DataFetcher />
+          <ShowRawData />
+        </div>
+      </div>
     </DataProvider>
   );  
 };
