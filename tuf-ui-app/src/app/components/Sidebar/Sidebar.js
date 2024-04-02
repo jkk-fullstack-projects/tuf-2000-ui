@@ -3,23 +3,25 @@
 // this is required by the next.js framework 
 // to render the component on the client-side
 
-import React from "react";
-import { useData } from "../../../context/DataContext";
-// import mockData from "../../../../mock_data/Mocked_meter_data.json";
+import React from 'react';
+import { useData } from '../../../context/DataContext';
+import styles from './Sidebar.module.css';
 
 const Sidebar = () => {
     const { filteredTimestamps, setSelectedTimestamp } = useData();
 
     return (
         <>
-            <div className={"sidebar"}>
+            <div className={styles.sidebar}>
                 <h4>TUF-2000M data</h4>
                 {filteredTimestamps.map((timestamp, index) => (
-                    <div 
+                    <button 
                         key={index} 
-                        onClick={() => setSelectedTimestamp(timestamp)}>
+                        onClick={() => setSelectedTimestamp(timestamp)}
+                        className={`${styles.button} ${styles.buttonPrimary}`}
+                    >
                             {timestamp}
-                    </div>
+                    </button>
                 ))}
             </div>
         </>

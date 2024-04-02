@@ -1,0 +1,71 @@
+.sidebar {
+  width: 250px;
+}
+
+.content-container {
+  display: flex;
+  gap: 20px;
+}
+
+.timestamps {
+  flex: 0 1 200px;
+  max-height: 400px;
+  overflow-y: auto; /* Enables scrolling */
+  border-right: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.data-display {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.timestamp-item {
+  cursor: pointer;
+  padding: 5px;
+  margin: 2px 0;
+}
+
+.timestamp-item.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.button {
+  padding: 50px 30px; /* Reduced right padding */
+  margin: 4px 2px; 
+  background-color: #555; 
+  color: white; 
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* No underline on text */
+  display: inline-block; /* Allow multiple buttons in a row */
+  font-size: 16px; /* Text size */
+  margin: 4px 2px; /* Margin around the button */
+  transition-duration: 0.4s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.button:hover {
+  background-color: #ddd; /* Light grey background on hover */
+  color: black; /* Black text on hover */
+}
+
+/* Additional classes for different button styles */
+.button-primary {
+  background-color: #666; /* Slightly lighter grey */
+}
+
+.button-secondary {
+  background-color: #777; /* Even lighter grey */
+}
+
+.button-danger {
+  background-color: #888; /* Lightest grey, for delete buttons etc. */
+}
