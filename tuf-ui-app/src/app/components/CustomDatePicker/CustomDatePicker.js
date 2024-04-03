@@ -3,8 +3,9 @@ import dynamic from 'next/dynamic';
 import { DataContext } from '../../../context/DataContext';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
+import styles from './CustomDatePicker.module.css';
 
-// DateRangePicker imported dyanamically only on client side to avoid SSR issues
+// DateRangePicker imported dyanamically: only on client side, to avoid SSR issues
 const DateRangePicker = dynamic(() => import('react-date-range')
     .then((mod) => mod.DateRangePicker), {ssr: false });
 
@@ -25,18 +26,15 @@ const CustomDatePicker = () => {
     const toggleShowCalendar = () => setShowCalendar(!showCalendar);
 
     return (
-        <div className="date-picker">
+        <div className={styles.datePickerContainer}>
+            <div className={styles.controls}>
+                <button onClick={handleClearDates} className={styles.controlButton}>Clear Dates</button>
+                <button onClick={() => setShowCalendar(!showCalendar)} className={styles.controlButton}>
+                    {showCalendar ? 'Hide Calendar' : 'Show Calendar'}
+                </button>
+            </div>
             {showCalendar && (
-                <button onClick={handleClearDates}>Clear Dates</button>
-            )}
-            <button onClick={toggleShowCalendar}>
-                {showCalendar ? 'Hide Calendar' : 'Show Calendar'}
-            </button>
-            {showCalendar && (
-                <DateRangePicker 
-                    ranges={dateRange} 
-                    onChange={handleSelect}
-                />
+                <DateRangePicker ranges={dateRange} onChange={handleSelect} />
             )}
         </div>
     );
