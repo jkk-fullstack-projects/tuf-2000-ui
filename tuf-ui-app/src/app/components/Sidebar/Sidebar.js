@@ -11,20 +11,23 @@ const Sidebar = () => {
     const { filteredTimestamps, setSelectedTimestamp } = useData();
 
     return (
-        <>
-            <div className={styles.sidebar}>
-                <h4>TUF-2000M data</h4>
-                {filteredTimestamps.map((timestamp, index) => (
-                    <button 
-                        key={index} 
-                        onClick={() => setSelectedTimestamp(timestamp)}
-                        className={`${styles.button} ${styles.buttonPrimary}`}
-                    >
-                            {timestamp}
-                    </button>
-                ))}
-            </div>
-        </>
+        <div className={styles.sidebar}>
+        <h4>TUF-2000M data</h4>
+        {filteredTimestamps.map((timestamp, index) => {
+            const [date, time] = timestamp.split('T');
+            const formattedTime = time.split('.')[0];
+            return (
+                <button
+                    key={index}
+                    className={styles.button}
+                    onClick={() => setSelectedTimestamp(timestamp)}
+                >
+                    <div>{date}</div>
+                    <div>{formattedTime}</div>
+                </button>
+            );
+        })}
+    </div>
     );
 };
 
