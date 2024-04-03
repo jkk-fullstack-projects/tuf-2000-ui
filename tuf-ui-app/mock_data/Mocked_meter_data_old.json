@@ -1,0 +1,1200 @@
+[
+        {
+        "timestamp": "2024-04-01T12:01:36.200452",
+        "data": [
+            {
+                "register": "0001",
+                "variableName": "Velocity",
+                "value": "-77.66",
+                "unit": "GJ"
+            },
+            {
+                "register": "0002",
+                "variableName": "Positive accumulator",
+                "value": "14.3",
+                "unit": "l/s"
+            },
+            {
+                "register": "0003",
+                "variableName": "Flow Rate",
+                "value": "64.84",
+                "unit": "l/d"
+            },
+            {
+                "register": "0004",
+                "variableName": "Fluid sound speed",
+                "value": "92.32",
+                "unit": "m3/s"
+            },
+            {
+                "register": "0005",
+                "variableName": "Temperature #2/outlet",
+                "value": "-29.17",
+                "unit": "l/d"
+            },
+            {
+                "register": "0006",
+                "variableName": "Positive accumulator",
+                "value": "88.66",
+                "unit": "m/s"
+            },
+            {
+                "register": "0007",
+                "variableName": "Energy Flow Rate",
+                "value": "75.04",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0008",
+                "variableName": "Negative energy accumulator",
+                "value": "2.23",
+                "unit": "GJ"
+            },
+            {
+                "register": "0009",
+                "variableName": "Fluid sound speed",
+                "value": "-56.37",
+                "unit": "l/min"
+            },
+            {
+                "register": "0010",
+                "variableName": "Energy Flow Rate",
+                "value": "-18.44",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0011",
+                "variableName": "Negative energy accumulator",
+                "value": "68.75",
+                "unit": "GJ"
+            },
+            {
+                "register": "0012",
+                "variableName": "Negative accumulator",
+                "value": "49.66",
+                "unit": "GJ"
+            },
+            {
+                "register": "0013",
+                "variableName": "Negative accumulator",
+                "value": "20.38",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0014",
+                "variableName": "Positive accumulator",
+                "value": "-92.79",
+                "unit": ""
+            },
+            {
+                "register": "0015",
+                "variableName": "Negative accumulator",
+                "value": "17.24",
+                "unit": "C"
+            },
+            {
+                "register": "0016",
+                "variableName": "Fluid sound speed",
+                "value": "-45.3",
+                "unit": "l/s"
+            },
+            {
+                "register": "0017",
+                "variableName": "Net accumulator",
+                "value": "-20.89",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0018",
+                "variableName": "Velocity",
+                "value": "80.95",
+                "unit": "m/s"
+            },
+            {
+                "register": "0019",
+                "variableName": "Velocity",
+                "value": "-26.86",
+                "unit": "l/h"
+            },
+            {
+                "register": "0020",
+                "variableName": "Energy Flow Rate",
+                "value": "-81.23",
+                "unit": "KWh"
+            },
+            {
+                "register": "0021",
+                "variableName": "Velocity",
+                "value": "-77.67",
+                "unit": "l/h"
+            },
+            {
+                "register": "0022",
+                "variableName": "Temperature #1/inlet",
+                "value": "-29.06",
+                "unit": "l/h"
+            },
+            {
+                "register": "0023",
+                "variableName": "Flow Rate",
+                "value": "-34.73",
+                "unit": "l/s"
+            },
+            {
+                "register": "0024",
+                "variableName": "Positive energy accumulator",
+                "value": "-24.7",
+                "unit": "GJ"
+            },
+            {
+                "register": "0025",
+                "variableName": "Velocity",
+                "value": "-51.9",
+                "unit": "GJ"
+            },
+            {
+                "register": "0026",
+                "variableName": "Net accumulator",
+                "value": "99.71",
+                "unit": "m/s"
+            },
+            {
+                "register": "0027",
+                "variableName": "Positive energy accumulator",
+                "value": "24.7",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0028",
+                "variableName": "Fluid sound speed",
+                "value": "20.78",
+                "unit": "KWh"
+            },
+            {
+                "register": "0029",
+                "variableName": "Signal Quality",
+                "value": "34.27",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0030",
+                "variableName": "Negative accumulator",
+                "value": "-15.51",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0031",
+                "variableName": "Negative energy accumulator",
+                "value": "-1.35",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0032",
+                "variableName": "Fluid sound speed",
+                "value": "28.07",
+                "unit": "GJ"
+            },
+            {
+                "register": "0033",
+                "variableName": "Negative accumulator",
+                "value": "16.02",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0034",
+                "variableName": "Velocity",
+                "value": "-12.06",
+                "unit": "l/min"
+            },
+            {
+                "register": "0035",
+                "variableName": "Temperature #2/outlet",
+                "value": "88.1",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0036",
+                "variableName": "Velocity",
+                "value": "73.8",
+                "unit": "l/s"
+            },
+            {
+                "register": "0037",
+                "variableName": "Fluid sound speed",
+                "value": "-78.83",
+                "unit": ""
+            },
+            {
+                "register": "0038",
+                "variableName": "Velocity",
+                "value": "95.21",
+                "unit": "l/s"
+            },
+            {
+                "register": "0039",
+                "variableName": "Positive energy accumulator",
+                "value": "-73.94",
+                "unit": "m/s"
+            },
+            {
+                "register": "0040",
+                "variableName": "Fluid sound speed",
+                "value": "-33.07",
+                "unit": "l/s"
+            },
+            {
+                "register": "0041",
+                "variableName": "Signal Quality",
+                "value": "-26.58",
+                "unit": "l/h"
+            },
+            {
+                "register": "0042",
+                "variableName": "Net accumulator",
+                "value": "-9.58",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0043",
+                "variableName": "Energy Flow Rate",
+                "value": "-18.31",
+                "unit": "l/s"
+            },
+            {
+                "register": "0044",
+                "variableName": "Negative accumulator",
+                "value": "-1.58",
+                "unit": "l/h"
+            },
+            {
+                "register": "0045",
+                "variableName": "Fluid sound speed",
+                "value": "-86.26",
+                "unit": "m3/s"
+            },
+            {
+                "register": "0046",
+                "variableName": "Negative accumulator",
+                "value": "-81.68",
+                "unit": "l/h"
+            },
+            {
+                "register": "0047",
+                "variableName": "Velocity",
+                "value": "19.98",
+                "unit": "l/min"
+            },
+            {
+                "register": "0048",
+                "variableName": "Signal Quality",
+                "value": "-51.03",
+                "unit": "C"
+            },
+            {
+                "register": "0049",
+                "variableName": "Positive accumulator",
+                "value": "53.64",
+                "unit": "m3/s"
+            },
+            {
+                "register": "0050",
+                "variableName": "Flow Rate",
+                "value": "-3.75",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0051",
+                "variableName": "Positive energy accumulator",
+                "value": "66.49",
+                "unit": "l/min"
+            },
+            {
+                "register": "0052",
+                "variableName": "Net accumulator",
+                "value": "35.78",
+                "unit": "GJ"
+            },
+            {
+                "register": "0053",
+                "variableName": "Signal Quality",
+                "value": "29.77",
+                "unit": ""
+            },
+            {
+                "register": "0054",
+                "variableName": "Energy Flow Rate",
+                "value": "-97.66",
+                "unit": "m3/s"
+            },
+            {
+                "register": "0055",
+                "variableName": "Negative accumulator",
+                "value": "-99.6",
+                "unit": "l/d"
+            },
+            {
+                "register": "0056",
+                "variableName": "Temperature #1/inlet",
+                "value": "-4.93",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0057",
+                "variableName": "Positive accumulator",
+                "value": "23.09",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0058",
+                "variableName": "Positive energy accumulator",
+                "value": "99.23",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0059",
+                "variableName": "Flow Rate",
+                "value": "-76.69",
+                "unit": "m/s"
+            },
+            {
+                "register": "0060",
+                "variableName": "Temperature #2/outlet",
+                "value": "-95.01",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0061",
+                "variableName": "Temperature #1/inlet",
+                "value": "-81.52",
+                "unit": "m3/s"
+            },
+            {
+                "register": "0062",
+                "variableName": "Negative accumulator",
+                "value": "13.73",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0063",
+                "variableName": "Fluid sound speed",
+                "value": "6.1",
+                "unit": "C"
+            },
+            {
+                "register": "0064",
+                "variableName": "Signal Quality",
+                "value": "86.37",
+                "unit": "m3/s"
+            },
+            {
+                "register": "0065",
+                "variableName": "Temperature #2/outlet",
+                "value": "-9.19",
+                "unit": "l/s"
+            },
+            {
+                "register": "0066",
+                "variableName": "Temperature #2/outlet",
+                "value": "4.68",
+                "unit": ""
+            },
+            {
+                "register": "0067",
+                "variableName": "Net accumulator",
+                "value": "79.38",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0068",
+                "variableName": "Flow Rate",
+                "value": "59.99",
+                "unit": "l/h"
+            },
+            {
+                "register": "0069",
+                "variableName": "Temperature #2/outlet",
+                "value": "-8.58",
+                "unit": "l/d"
+            },
+            {
+                "register": "0070",
+                "variableName": "Net accumulator",
+                "value": "70.47",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0071",
+                "variableName": "Negative energy accumulator",
+                "value": "4.64",
+                "unit": "m/s"
+            },
+            {
+                "register": "0072",
+                "variableName": "Fluid sound speed",
+                "value": "81.86",
+                "unit": "l/s"
+            },
+            {
+                "register": "0073",
+                "variableName": "Signal Quality",
+                "value": "59.27",
+                "unit": "GJ"
+            },
+            {
+                "register": "0074",
+                "variableName": "Net accumulator",
+                "value": "-38.48",
+                "unit": ""
+            },
+            {
+                "register": "0075",
+                "variableName": "Temperature #2/outlet",
+                "value": "-97.19",
+                "unit": "l/min"
+            },
+            {
+                "register": "0076",
+                "variableName": "Temperature #2/outlet",
+                "value": "90.26",
+                "unit": "l/min"
+            },
+            {
+                "register": "0077",
+                "variableName": "Negative accumulator",
+                "value": "-20.04",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0078",
+                "variableName": "Temperature #1/inlet",
+                "value": "54.2",
+                "unit": ""
+            },
+            {
+                "register": "0079",
+                "variableName": "Flow Rate",
+                "value": "3.47",
+                "unit": "C"
+            },
+            {
+                "register": "0080",
+                "variableName": "Temperature #2/outlet",
+                "value": "-36.79",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0081",
+                "variableName": "Net accumulator",
+                "value": "41.89",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0082",
+                "variableName": "Fluid sound speed",
+                "value": "24.07",
+                "unit": "l/d"
+            },
+            {
+                "register": "0083",
+                "variableName": "Velocity",
+                "value": "-63.61",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0084",
+                "variableName": "Velocity",
+                "value": "23.72",
+                "unit": "KWh"
+            },
+            {
+                "register": "0085",
+                "variableName": "Flow Rate",
+                "value": "-1.01",
+                "unit": "C"
+            },
+            {
+                "register": "0086",
+                "variableName": "Negative energy accumulator",
+                "value": "-10.07",
+                "unit": "l/d"
+            },
+            {
+                "register": "0087",
+                "variableName": "Energy Flow Rate",
+                "value": "-96.37",
+                "unit": ""
+            },
+            {
+                "register": "0088",
+                "variableName": "Negative energy accumulator",
+                "value": "30.15",
+                "unit": "C"
+            },
+            {
+                "register": "0089",
+                "variableName": "Temperature #2/outlet",
+                "value": "-37.25",
+                "unit": "m/s"
+            },
+            {
+                "register": "0090",
+                "variableName": "Positive energy accumulator",
+                "value": "14.78",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0091",
+                "variableName": "Fluid sound speed",
+                "value": "-80.07",
+                "unit": "m/s"
+            },
+            {
+                "register": "0092",
+                "variableName": "Negative energy accumulator",
+                "value": "92.57",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0093",
+                "variableName": "Temperature #2/outlet",
+                "value": "-30.2",
+                "unit": "l/s"
+            },
+            {
+                "register": "0094",
+                "variableName": "Velocity",
+                "value": "-4.24",
+                "unit": ""
+            },
+            {
+                "register": "0095",
+                "variableName": "Positive energy accumulator",
+                "value": "-31.69",
+                "unit": "l/h"
+            },
+            {
+                "register": "0096",
+                "variableName": "Energy Flow Rate",
+                "value": "79.21",
+                "unit": "l/min"
+            },
+            {
+                "register": "0097",
+                "variableName": "Energy Flow Rate",
+                "value": "-45.68",
+                "unit": "KWh"
+            },
+            {
+                "register": "0098",
+                "variableName": "Net accumulator",
+                "value": "41.88",
+                "unit": "l/min"
+            },
+            {
+                "register": "0099",
+                "variableName": "Negative accumulator",
+                "value": "-11.53",
+                "unit": "m3/d"
+            }
+        ]
+    },
+    {
+        "timestamp": "2024-04-02T08:31:07.133406",
+        "data": [
+            {
+                "register": "0001",
+                "variableName": "Signal Quality",
+                "value": "-66.59",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0002",
+                "variableName": "Fluid sound speed",
+                "value": "-16.75",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0003",
+                "variableName": "Positive accumulator",
+                "value": "6.23",
+                "unit": "GJ"
+            },
+            {
+                "register": "0004",
+                "variableName": "Energy Flow Rate",
+                "value": "-40.17",
+                "unit": "l/min"
+            },
+            {
+                "register": "0005",
+                "variableName": "Positive accumulator",
+                "value": "44.81",
+                "unit": ""
+            },
+            {
+                "register": "0006",
+                "variableName": "Flow Rate",
+                "value": "-57.97",
+                "unit": "l/min"
+            },
+            {
+                "register": "0007",
+                "variableName": "Positive energy accumulator",
+                "value": "-17.75",
+                "unit": "C"
+            },
+            {
+                "register": "0008",
+                "variableName": "Positive accumulator",
+                "value": "99.97",
+                "unit": "l/d"
+            },
+            {
+                "register": "0009",
+                "variableName": "Temperature #1/inlet",
+                "value": "-81.97",
+                "unit": "l/h"
+            },
+            {
+                "register": "0010",
+                "variableName": "Positive accumulator",
+                "value": "26.94",
+                "unit": "C"
+            },
+            {
+                "register": "0011",
+                "variableName": "Flow Rate",
+                "value": "-42.02",
+                "unit": "l/s"
+            },
+            {
+                "register": "0012",
+                "variableName": "Net accumulator",
+                "value": "-7.77",
+                "unit": "l/d"
+            },
+            {
+                "register": "0013",
+                "variableName": "Net accumulator",
+                "value": "-40.79",
+                "unit": ""
+            },
+            {
+                "register": "0014",
+                "variableName": "Negative energy accumulator",
+                "value": "38.78",
+                "unit": "GJ"
+            },
+            {
+                "register": "0015",
+                "variableName": "Positive accumulator",
+                "value": "28.05",
+                "unit": "l/s"
+            },
+            {
+                "register": "0016",
+                "variableName": "Positive accumulator",
+                "value": "11.9",
+                "unit": "C"
+            },
+            {
+                "register": "0017",
+                "variableName": "Positive accumulator",
+                "value": "-51.76",
+                "unit": "m/s"
+            },
+            {
+                "register": "0018",
+                "variableName": "Energy Flow Rate",
+                "value": "-43.69",
+                "unit": "l/s"
+            },
+            {
+                "register": "0019",
+                "variableName": "Positive accumulator",
+                "value": "15.28",
+                "unit": ""
+            },
+            {
+                "register": "0020",
+                "variableName": "Flow Rate",
+                "value": "-59.3",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0021",
+                "variableName": "Temperature #2/outlet",
+                "value": "24.87",
+                "unit": "C"
+            },
+            {
+                "register": "0022",
+                "variableName": "Negative accumulator",
+                "value": "95.87",
+                "unit": "l/s"
+            },
+            {
+                "register": "0023",
+                "variableName": "Energy Flow Rate",
+                "value": "18.84",
+                "unit": "l/h"
+            },
+            {
+                "register": "0024",
+                "variableName": "Temperature #1/inlet",
+                "value": "66.56",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0025",
+                "variableName": "Temperature #2/outlet",
+                "value": "32.7",
+                "unit": "C"
+            },
+            {
+                "register": "0026",
+                "variableName": "Positive energy accumulator",
+                "value": "29.7",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0027",
+                "variableName": "Positive accumulator",
+                "value": "-90.37",
+                "unit": "l/h"
+            },
+            {
+                "register": "0028",
+                "variableName": "Negative energy accumulator",
+                "value": "96.04",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0029",
+                "variableName": "Positive energy accumulator",
+                "value": "-10.31",
+                "unit": "C"
+            },
+            {
+                "register": "0030",
+                "variableName": "Negative energy accumulator",
+                "value": "-54.2",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0031",
+                "variableName": "Temperature #2/outlet",
+                "value": "40.04",
+                "unit": ""
+            },
+            {
+                "register": "0032",
+                "variableName": "Net accumulator",
+                "value": "-62.61",
+                "unit": "KWh"
+            },
+            {
+                "register": "0033",
+                "variableName": "Net accumulator",
+                "value": "43.03",
+                "unit": ""
+            },
+            {
+                "register": "0034",
+                "variableName": "Signal Quality",
+                "value": "-17.32",
+                "unit": "m/s"
+            },
+            {
+                "register": "0035",
+                "variableName": "Positive accumulator",
+                "value": "-19.29",
+                "unit": "m/s"
+            },
+            {
+                "register": "0036",
+                "variableName": "Signal Quality",
+                "value": "19.17",
+                "unit": "l/h"
+            },
+            {
+                "register": "0037",
+                "variableName": "Negative accumulator",
+                "value": "56.39",
+                "unit": "l/d"
+            },
+            {
+                "register": "0038",
+                "variableName": "Velocity",
+                "value": "32.23",
+                "unit": "m3/d"
+            },
+            {
+                "register": "0039",
+                "variableName": "Temperature #2/outlet",
+                "value": "-78.2",
+                "unit": ""
+            },
+            {
+                "register": "0040",
+                "variableName": "Signal Quality",
+                "value": "59.76",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0041",
+                "variableName": "Negative energy accumulator",
+                "value": "92.45",
+                "unit": "m/s"
+            },
+            {
+                "register": "0042",
+                "variableName": "Temperature #2/outlet",
+                "value": "-50.54",
+                "unit": "GJ"
+            },
+            {
+                "register": "0043",
+                "variableName": "Negative energy accumulator",
+                "value": "-37.52",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0044",
+                "variableName": "Velocity",
+                "value": "-37.7",
+                "unit": "l/s"
+            },
+            {
+                "register": "0045",
+                "variableName": "Velocity",
+                "value": "-69.76",
+                "unit": "l/d"
+            },
+            {
+                "register": "0046",
+                "variableName": "Positive accumulator",
+                "value": "33.06",
+                "unit": "KWh"
+            },
+            {
+                "register": "0047",
+                "variableName": "Positive accumulator",
+                "value": "-53.04",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0048",
+                "variableName": "Signal Quality",
+                "value": "99.91",
+                "unit": "m/s"
+            },
+            {
+                "register": "0049",
+                "variableName": "Net accumulator",
+                "value": "4.75",
+                "unit": "GJ"
+            },
+            {
+                "register": "0050",
+                "variableName": "Positive accumulator",
+                "value": "57.37",
+                "unit": "l/h"
+            },
+            {
+                "register": "0051",
+                "variableName": "Positive energy accumulator",
+                "value": "97.9",
+                "unit": "l/min"
+            },
+            {
+                "register": "0052",
+                "variableName": "Negative energy accumulator",
+                "value": "-46.56",
+                "unit": "l/min"
+            },
+            {
+                "register": "0053",
+                "variableName": "Negative accumulator",
+                "value": "23.38",
+                "unit": "m/s"
+            },
+            {
+                "register": "0054",
+                "variableName": "Velocity",
+                "value": "3.47",
+                "unit": "GJ"
+            },
+            {
+                "register": "0055",
+                "variableName": "Negative energy accumulator",
+                "value": "49.54",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0056",
+                "variableName": "Positive accumulator",
+                "value": "-21.89",
+                "unit": "KWh"
+            },
+            {
+                "register": "0057",
+                "variableName": "Net accumulator",
+                "value": "-51.7",
+                "unit": "C"
+            },
+            {
+                "register": "0058",
+                "variableName": "Flow Rate",
+                "value": "-85.41",
+                "unit": "C"
+            },
+            {
+                "register": "0059",
+                "variableName": "Positive energy accumulator",
+                "value": "62.25",
+                "unit": ""
+            },
+            {
+                "register": "0060",
+                "variableName": "Temperature #2/outlet",
+                "value": "-51.7",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0061",
+                "variableName": "Energy Flow Rate",
+                "value": "-4.67",
+                "unit": "KWh"
+            },
+            {
+                "register": "0062",
+                "variableName": "Net accumulator",
+                "value": "61.54",
+                "unit": "l/h"
+            },
+            {
+                "register": "0063",
+                "variableName": "Temperature #1/inlet",
+                "value": "18.31",
+                "unit": "m/s"
+            },
+            {
+                "register": "0064",
+                "variableName": "Temperature #2/outlet",
+                "value": "60.36",
+                "unit": ""
+            },
+            {
+                "register": "0065",
+                "variableName": "Energy Flow Rate",
+                "value": "55.24",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0066",
+                "variableName": "Flow Rate",
+                "value": "75.75",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0067",
+                "variableName": "Flow Rate",
+                "value": "-15.18",
+                "unit": "l/min"
+            },
+            {
+                "register": "0068",
+                "variableName": "Negative accumulator",
+                "value": "80.5",
+                "unit": "m/s"
+            },
+            {
+                "register": "0069",
+                "variableName": "Temperature #1/inlet",
+                "value": "28.54",
+                "unit": "l/h"
+            },
+            {
+                "register": "0070",
+                "variableName": "Signal Quality",
+                "value": "-32.33",
+                "unit": ""
+            },
+            {
+                "register": "0071",
+                "variableName": "Velocity",
+                "value": "84.8",
+                "unit": ""
+            },
+            {
+                "register": "0072",
+                "variableName": "Fluid sound speed",
+                "value": "42.41",
+                "unit": "KWh"
+            },
+            {
+                "register": "0073",
+                "variableName": "Velocity",
+                "value": "14.11",
+                "unit": "KWh"
+            },
+            {
+                "register": "0074",
+                "variableName": "Fluid sound speed",
+                "value": "-27.78",
+                "unit": ""
+            },
+            {
+                "register": "0075",
+                "variableName": "Positive accumulator",
+                "value": "-65.04",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0076",
+                "variableName": "Positive accumulator",
+                "value": "35.95",
+                "unit": "C"
+            },
+            {
+                "register": "0077",
+                "variableName": "Velocity",
+                "value": "22.8",
+                "unit": "l/min"
+            },
+            {
+                "register": "0078",
+                "variableName": "Energy Flow Rate",
+                "value": "-42.61",
+                "unit": "m/s"
+            },
+            {
+                "register": "0079",
+                "variableName": "Energy Flow Rate",
+                "value": "-11.0",
+                "unit": "C"
+            },
+            {
+                "register": "0080",
+                "variableName": "Positive energy accumulator",
+                "value": "-40.31",
+                "unit": "l/h"
+            },
+            {
+                "register": "0081",
+                "variableName": "Net accumulator",
+                "value": "-12.26",
+                "unit": "l/min"
+            },
+            {
+                "register": "0082",
+                "variableName": "Velocity",
+                "value": "92.18",
+                "unit": "m/s"
+            },
+            {
+                "register": "0083",
+                "variableName": "Positive accumulator",
+                "value": "6.93",
+                "unit": "C"
+            },
+            {
+                "register": "0084",
+                "variableName": "Net accumulator",
+                "value": "56.02",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0085",
+                "variableName": "Fluid sound speed",
+                "value": "51.12",
+                "unit": "m3/s"
+            },
+            {
+                "register": "0086",
+                "variableName": "Net accumulator",
+                "value": "-72.21",
+                "unit": "C"
+            },
+            {
+                "register": "0087",
+                "variableName": "Energy Flow Rate",
+                "value": "12.09",
+                "unit": "GJ"
+            },
+            {
+                "register": "0088",
+                "variableName": "Positive accumulator",
+                "value": "67.98",
+                "unit": "l/s"
+            },
+            {
+                "register": "0089",
+                "variableName": "Velocity",
+                "value": "32.39",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0090",
+                "variableName": "Negative accumulator",
+                "value": "-58.48",
+                "unit": "l/min"
+            },
+            {
+                "register": "0091",
+                "variableName": "Net accumulator",
+                "value": "-61.32",
+                "unit": "C"
+            },
+            {
+                "register": "0092",
+                "variableName": "Temperature #1/inlet",
+                "value": "13.05",
+                "unit": "m3/min"
+            },
+            {
+                "register": "0093",
+                "variableName": "Signal Quality",
+                "value": "-80.26",
+                "unit": "GJ"
+            },
+            {
+                "register": "0094",
+                "variableName": "Positive energy accumulator",
+                "value": "-8.26",
+                "unit": ""
+            },
+            {
+                "register": "0095",
+                "variableName": "Velocity",
+                "value": "24.59",
+                "unit": "m3/h"
+            },
+            {
+                "register": "0096",
+                "variableName": "Temperature #1/inlet",
+                "value": "47.21",
+                "unit": "GJ"
+            },
+            {
+                "register": "0097",
+                "variableName": "Negative accumulator",
+                "value": "-56.61",
+                "unit": "l/h"
+            },
+            {
+                "register": "0098",
+                "variableName": "Signal Quality",
+                "value": "-74.35",
+                "unit": "C"
+            },
+            {
+                "register": "0099",
+                "variableName": "Positive energy accumulator",
+                "value": "-59.18",
+                "unit": "l/s"
+            }
+        ]
+    }
+]
