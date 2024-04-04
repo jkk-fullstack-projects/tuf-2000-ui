@@ -50,8 +50,9 @@ export const DataProvider = ({ children }) => {
             if (selectedTimestamp) {
                 console.log("Fetching data for timestamp:", selectedTimestamp);
                 try {
-                    const formattedDate = selectedTimestamp.split('T')[0]; // Extracts date part
-                    const response = await axios.get(`/api/data?startDate=${formattedDate}&endDate=${formattedDate}`)
+                    //const formattedDate = selectedTimestamp.split('T')[0]; // Extracts date part
+                    //const response = await axios.get(`/api/data?startDate=${formattedDate}&endDate=${formattedDate}`)
+                    const response = await axios.get(`/api/data?timestamp=${encodeURIComponent(selectedTimestamp)}`);
                     console.log("Data retrieval succeeded:", response.data);
                     setFetchedData(response.data);
                 } catch (error) {

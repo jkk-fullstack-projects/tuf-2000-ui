@@ -1,13 +1,16 @@
 import { useData } from "../../../context/DataContext";
 
 const ShowRawData = () => {
-  const { fetchedData } = useData();
+  const { fetchedData, selectedTimestamp } = useData();
+  
+  const dataForSelectedTimestamp = fetchedData.find(data => data.timestamp === selectedTimestamp);
 
-  if (!fetchedData.length || !fetchedData[0].data) {
-    return <div>No data found</div>; 
+
+  if (!dataForSelectedTimestamp) {
+    return <div>No data found for selected timestamp</div>; 
   }
 
-  const dataToDisplay = fetchedData[0].data;
+  const dataToDisplay = dataForSelectedTimestamp.data;
 
   return (
     <div className="fetched-data">

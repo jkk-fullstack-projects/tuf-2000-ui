@@ -3,18 +3,24 @@ import { getFirestore, collection, query, where, getDocs } from "firebase/firest
 import db from '../../utils/firebaseConfig';
 
 export default async function handler(req, res) {
-    const { startDate, endDate } = req.query;
+    //const { startDate, endDate } = req.query;
+    const { timestamp } = req.query;
 
-    const startOfDay = `${startDate}T00:00:00`;
-    const endOfDay = `${endDate}T23:59:59`;
 
-    console.log(`Querying Firestore with startDate: ${startOfDay}, endDate: ${endOfDay}`);
+    //const startOfDay = `${startDate}T00:00:00`;
+    //const endOfDay = `${endDate}T23:59:59`;
 
-    const dbQuery = query(
-        collection(db, 'datasets'), 
-        where("timestamp", ">=", startOfDay),
-        where("timestamp", "<=", endOfDay)
-    );
+    //console.log(`Querying Firestore with startDate: ${startOfDay}, endDate: ${endOfDay}`);
+
+    //const dbQuery = query(
+    //    collection(db, 'datasets'), 
+    //    where("timestamp", ">=", startOfDay),
+    //    where("timestamp", "<=", endOfDay)
+    //);
+
+
+    const dbQuery = query(collection(db, 'datasets'), where("timestamp", "==", timestamp));
+
 
     try {
         const querySnapshot = await getDocs(dbQuery);
