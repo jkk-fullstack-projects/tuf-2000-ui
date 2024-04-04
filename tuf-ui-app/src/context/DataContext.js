@@ -18,41 +18,25 @@ export const DataProvider = ({ children }) => {
     const [filteredTimestamps, setFilteredTimestamps] = useState([]);
 
     const fetchTimestampsFromDateRange = async () => {
-        let { startDate, endDate } = dateRange[0]; 
-
-        console.log('Original dateRange from picker at datacontext:', { startDate, endDate });
-
-        // Adjust startDate and endDate to the beginning of the day in local time zone
-        // handling some edge cases
-        startDate = adjustDateToStartOfDay(startDate);       
-        endDate = adjustDateToEndOfDay(endDate);
-
-        console.log('Adjusted startDate and endDate for query at datacontext:', { startDate, endDate });
-
-
-        // YYYY-MM-DD format
-        const startTimestamp = startDate.toISOString().split('T')[0];
-        const endTimestamp = endDate.toISOString().split('T')[0];
+        let { startDate, endDate } = dateRange[0];
     
-        console.log('Formatted startTimestamp and endTimestamp at datacontext:', { startTimestamp, endTimestamp });
-
+        // Convert startDate and endDate to strings that match the Firestore format
+        const startString = startDate.toISOString().split('.')[0] + "Z"; 
+        const endString = endDate.toISOString().split('.')[0] + "Z";
+    
         const timestamps = [];
-      
-        const dbQuery = query(collection(db, 'datasets'), 
-            where("timestamp", ">=", startTimestamp), 
-            where("timestamp", "<=", endTimestamp)
+    
+        const dbQuery = query(
+            collection(db, 'datasets'), 
+            where("timestamp", ">=", startString), 
+            where("timestamp", "<=", endString)
         );
-
-        console.log('Formatted startTimestamp and endTimestamp at datacontext:', { startTimestamp, endTimestamp });
-
-
+    
         const querySnapshot = await getDocs(dbQuery);
         querySnapshot.forEach((doc) => {
             timestamps.push(doc.data().timestamp);
         });
     
-        console.log('Fetched timestamps at dataconte:', timestamps);
-
         return timestamps;
     };
 
