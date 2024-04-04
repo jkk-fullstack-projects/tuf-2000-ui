@@ -14,13 +14,29 @@ const CustomDatePicker = () => {
     const [showCalendar, setShowCalendar] = useState(true);
 
     const handleSelect = (ranges) => {
-        setDateRange([ranges.selection]); // Update the date range in context
+
+        const selectionStart = new Date(ranges.selection.startDate);
+        selectionStart.setHours(0, 0, 0, 0); // Set start of the day
+        const selectionEnd = new Date(ranges.selection.endDate);
+        selectionEnd.setHours(23, 59, 59, 999); // Set end of the day        
+        console.log('Date selected from picker:', ranges);
+
+        const adjustedRange = {
+            ...ranges.selection,
+            startDate: new Date(ranges.selection.startDate.setHours(0, 0, 0, 0)),
+            endDate: new Date(ranges.selection.endDate.setHours(23, 59, 59, 999)),
+        };
+        setDateRange([adjustedRange]);
     };
 
     const handleClearDates = () => {
         console.log('Clearing Dates');
-        const resetRange = [{ startDate: new Date(), endDate: new Date(), key: 'selection' }];
-        setDateRange(resetRange); // set the state with an array of new range
+        const today = new Date();
+        setDateRange([{ 
+            startDate: today, 
+            endDate: today, 
+            key: 'selection'
+        }]);
     };
 
     const toggleShowCalendar = () => setShowCalendar(!showCalendar);
@@ -29,7 +45,7 @@ const CustomDatePicker = () => {
         <div className={styles.datePickerContainer}>
             <div className={styles.controls}>
                 <button onClick={handleClearDates} className={styles.controlButton}>Clear Dates</button>
-                <button onClick={() => setShowCalendar(!showCalendar)} className={styles.controlButton}>
+                <button onClick={toggleShowCalendar} className={styles.controlButton}>
                     {showCalendar ? 'Hide Calendar' : 'Show Calendar'}
                 </button>
             </div>
