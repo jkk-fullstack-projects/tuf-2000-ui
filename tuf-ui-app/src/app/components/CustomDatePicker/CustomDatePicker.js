@@ -1,11 +1,27 @@
+/**
+ * CustomDatePicker Component
+ * Provides a date range picker for selecting start and end dates.
+ * Utilizes `react-date-range` for the date range picker UI.
+ * 
+ * @component
+ * @example
+ * return (
+ *   <CustomDatePicker />
+ * )
+ */
+
 import React, { useContext, useState } from "react";
 import dynamic from 'next/dynamic';
-import { DataContext } from '../../../context/DataContext';
+import { DataContext } from '../../../context/DataContext.js';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import styles from './CustomDatePicker.module.css';
+import { setStartOfDay, setEndOfDay } from '../utils/dateUtils.js';
 
-// DateRangePicker imported dyanamically: only on client side, to avoid SSR issues
+/**
+* DateRangePicker imported dyanamically: 
+* to be rendered only on client side, to avoid unnecessary SSR issues
+*/
 const DateRangePicker = dynamic(() => import('react-date-range')
     .then((mod) => mod.DateRangePicker), {ssr: false });
 
@@ -13,22 +29,24 @@ const CustomDatePicker = () => {
     const { dateRange, setDateRange } = useContext(DataContext);
     const [showCalendar, setShowCalendar] = useState(true);
 
+    /**
+     * Handles the selection of dates from the DateRangePicker.
+     * Adjusts the start and end dates to cover the entire selected days.
+     * 
+     * @param {Object} ranges - The selected date ranges.
+     */
     const handleSelect = (ranges) => {
-
-        const selectionStart = new Date(ranges.selection.startDate);
-        selectionStart.setHours(0, 0, 0, 0); // Set start of the day
-        const selectionEnd = new Date(ranges.selection.endDate);
-        selectionEnd.setHours(23, 59, 59, 999); // Set end of the day        
-        console.log('Date selected from picker:', ranges);
-
         const adjustedRange = {
             ...ranges.selection,
-            startDate: new Date(ranges.selection.startDate.setHours(0, 0, 0, 0)),
-            endDate: new Date(ranges.selection.endDate.setHours(23, 59, 59, 999)),
+            startDate: setStartOfDay(ranges.selection.startDate),
+            endDate: setEndOfDay(ranges.selection.endDate),
         };
         setDateRange([adjustedRange]);
     };
 
+    /**
+     * Clears the selected dates, resetting them to today's date.
+     */
     const handleClearDates = () => {
         console.log('Clearing Dates');
         const today = new Date();
@@ -38,7 +56,10 @@ const CustomDatePicker = () => {
             key: 'selection'
         }]);
     };
-
+    
+    /**
+     * Toggles the visibility of the calendar.
+     */
     const toggleShowCalendar = () => setShowCalendar(!showCalendar);
 
     return (
