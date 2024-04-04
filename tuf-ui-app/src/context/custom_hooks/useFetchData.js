@@ -13,11 +13,8 @@ export const useFetchData = (selectedTimestamp) => {
     useEffect(() => {
         const fetchData = async () =>{
             if (selectedTimestamp) {
-                console.log("Fetching data for timestamp:", selectedTimestamp);
-
                 try {
                     const response = await axios.get(`/api/data?timestamp=${encodeURIComponent(selectedTimestamp)}`);
-                    console.log("Data retrieval succeeded:", response.data);
                     setFetchedData(response.data);
                 } catch (error) {
                     console.error('Error fetching data:', error);

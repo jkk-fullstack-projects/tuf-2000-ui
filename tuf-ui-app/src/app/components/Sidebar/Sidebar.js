@@ -15,7 +15,7 @@ const Sidebar = () => {
         <div className={styles.sidebar}>
         <h4>TUF-2000M data</h4>
         {filteredTimestamps.map((timestamp, index) => {
-            // we assume timestamp is in ISO String format
+            // assuming the timestamp is in ISO String format
             const formattedDate = format(new Date(timestamp), 'yyyy-MM-dd');
             const formattedTime = format(new Date(timestamp), 'HH:mm:ss');
 
