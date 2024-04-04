@@ -18,12 +18,10 @@ export const DataProvider = ({ children }) => {
     const [filteredTimestamps, setFilteredTimestamps] = useState([]);
 
     const fetchTimestampsFromDateRange = async () => {
-        let { startDate, endDate } = dateRange[0];
-    
+        let { startDate, endDate } = dateRange[0];    
         // Convert startDate and endDate to strings that match the Firestore format
         const startString = startDate.toISOString().split('.')[0] + "Z"; 
         const endString = endDate.toISOString().split('.')[0] + "Z";
-    
         const timestamps = [];
     
         const dbQuery = query(
@@ -41,6 +39,8 @@ export const DataProvider = ({ children }) => {
     };
 
     useEffect(() => {
+        setFetchedData([]); //Clear previous data when a new timestamp is selected
+        setSelectedTimestamp(null); //Clear previous timestamp when a new timestamp is selected  
         fetchTimestampsFromDateRange()
             .then(setFilteredTimestamps);
     }, [dateRange]);
@@ -49,9 +49,8 @@ export const DataProvider = ({ children }) => {
         async function fetchData() {
             if (selectedTimestamp) {
                 console.log("Fetching data for timestamp:", selectedTimestamp);
+
                 try {
-                    //const formattedDate = selectedTimestamp.split('T')[0]; // Extracts date part
-                    //const response = await axios.get(`/api/data?startDate=${formattedDate}&endDate=${formattedDate}`)
                     const response = await axios.get(`/api/data?timestamp=${encodeURIComponent(selectedTimestamp)}`);
                     console.log("Data retrieval succeeded:", response.data);
                     setFetchedData(response.data);
@@ -61,7 +60,6 @@ export const DataProvider = ({ children }) => {
                 }
             }
         }
-
         fetchData();
     }, [selectedTimestamp]);
 
