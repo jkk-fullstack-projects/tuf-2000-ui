@@ -12,8 +12,8 @@ const Sidebar = () => {
     const { filteredTimestamps, setSelectedTimestamp } = useData();
 
     return (
-        <div className={styles.sidebar}>
-        <h4>TUF-2000M data</h4>
+        <div className={styles.sidebar} style={{ overflowY: 'auto', maxHeight: '90vh' }}>
+        <h4>Measurings:</h4>
         {filteredTimestamps.map((timestamp, index) => {
             // assuming the timestamp is in ISO String format
             const formattedDate = format(new Date(timestamp), 'yyyy-MM-dd');

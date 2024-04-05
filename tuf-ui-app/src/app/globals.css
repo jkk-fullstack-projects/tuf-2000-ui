@@ -32,10 +32,10 @@ body {
 }
 
 .sidebar {
-  flex: 0 0 250px; 
+  flex: 0 0 200px; 
   background-color: #111;
   color: white;
-  padding: 20px;
+  padding: 10px;
 }
 
 .main-content {
