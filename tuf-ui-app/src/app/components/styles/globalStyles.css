@@ -1,0 +1,26 @@
+/* Custom styles for react-date-range calendar selection */
+.rdrSelected {
+    background-color: #555 !important; /* Grey background */
+    color: white !important; /* White text */
+  }
+  
+  /* Base styles for the calendar */
+  .react-date-range {
+    width: 100%;
+    max-width: 400px; /* Adjust based on your needs */
+  }
+  
+  /* Styles for screens in portrait orientation */
+  @media screen and (orientation: portrait) {
+    .react-date-range {
+      max-width: 100%; /* Take full width in portrait mode */
+    }
+  }
+  
+  /* Styles for screens in landscape orientation */
+  @media screen and (orientation: landscape) {
+    .react-date-range {
+      max-height: 60vh; /* Adjust height in landscape mode */
+    }
+  }
+  

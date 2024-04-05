@@ -38,14 +38,18 @@
 }
 
 .button {
-  display: flex;
+  display: block;
+  width: 100%;
   flex-direction: column; /* Aligns date and time vertically */
   justify-content: center;
-  align-items: flex-start; /* Aligns content to the left */
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   gap: 2px; /* Adds space between date and time */
-  min-width: 120px; /* Ensure minimum width for buttons */
-  padding: 5px 10px;
+  padding: 10px;
   margin: 4px 0; /* Adds space between buttons */
+  margin-bottom: 5px;
   background-color: #555;
   color: white;
   border: none;
@@ -53,10 +57,6 @@
   cursor: pointer;
   border-radius: 5px;
   transition-duration: 0.4s;
-}
-
-.button div {
-  white-space: nowrap; /* Prevents breaking of date and time into multiple lines */
 }
 
 .button:hover {
