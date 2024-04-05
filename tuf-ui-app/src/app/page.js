@@ -12,17 +12,18 @@ export default function Home() {
   return (
     <DataProvider>
       <div className="app-container">
-      <Sidebar />
-      <div className="main-content">
-        <CustomDatePicker 
-          isCalendarVisible={isCalendarVisible} 
-          setIsCalendarVisible={setIsCalendarVisible} 
-        />
-        <div className={`data-display-area ${isCalendarVisible ? 'small' : 'large'}`}>
-          <ShowRawData />
+        <div className="calendar-and-sidebar">
+          <CustomDatePicker 
+            isCalendarVisible={isCalendarVisible} 
+            setIsCalendarVisible={setIsCalendarVisible} 
+          />
+          <Sidebar />
+        
+          <div className={`data-display-area ${isCalendarVisible ? 'small' : 'large'}`}>
+            <ShowRawData />
+          </div>
         </div>
       </div>
-    </div>
     </DataProvider>
   );  
 };

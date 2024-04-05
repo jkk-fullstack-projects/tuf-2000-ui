@@ -28,6 +28,7 @@ body {
 
 .app-container {
   display: flex;
+  flex-direction: column; /* Stack components vertically on smaller screens */
   min-height: 100vh;
 }
 
@@ -36,6 +37,7 @@ body {
   background-color: #111;
   color: white;
   padding: 10px;
+  overflow-y: auto; /* Enable scrolling for sidebar */
 }
 
 .main-content {
