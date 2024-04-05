@@ -28,29 +28,34 @@ body {
 
 .app-container {
   display: flex;
-  flex-direction: column; /* Stack components vertically on smaller screens */
+  flex-direction: row; /* Ensure side-by-side layout by default */
   min-height: 100vh;
 }
 
 .sidebar {
-  flex: 0 0 200px; 
+  flex: 0 0 220px; 
   background-color: #111;
   color: white;
-  padding: 10px;
+  padding: 20px;
   overflow-y: auto; /* Enable scrolling for sidebar */
 }
 
 .main-content {
   flex-grow: 1;
-  padding: 10px;
+  padding: 20px;
   background-color: #f4f4f4;
   overflow-y: hidden;
 }
 
 @media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* Stack components on smaller screens */
+  }
+
   .sidebar {
-    flex: 0 0 100px; /* Adjust sidebar width for smaller screens */
-    padding: 5px;
+    flex: 0 0;
+    width: 100%;
+    padding: 10px;
   }
 
   .main-content, .sidebar {

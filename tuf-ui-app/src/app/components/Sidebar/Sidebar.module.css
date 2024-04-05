@@ -43,6 +43,7 @@
   justify-content: center;
   align-items: flex-start; /* Aligns content to the left */
   gap: 2px; /* Adds space between date and time */
+  min-width: 120px; /* Ensure minimum width for buttons */
   padding: 5px 10px;
   margin: 4px 0; /* Adds space between buttons */
   background-color: #555;
