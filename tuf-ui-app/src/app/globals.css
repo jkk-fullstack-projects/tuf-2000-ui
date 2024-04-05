@@ -47,7 +47,22 @@ body {
 
 @media screen and (max-width: 768px) {
   .sidebar {
-    flex: 0 0 100px; /* Smaller sidebar for mobile */
+    flex: 0 0 100px; /* Adjust sidebar width for smaller screens */
+    padding: 5px;
+  }
+
+  .main-content, .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .button, .controlButton {
+    padding: 12px 15px; /* Larger buttons for easier tapping */
+    font-size: 14px;
+  }
+
+  h4, .timestamp-item, .data-display {
+    font-size: 14px;
   }
 }
 
