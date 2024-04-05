@@ -41,7 +41,8 @@ body {
 .main-content {
   flex-grow: 1;
   padding: 10px;
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -54,4 +55,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.data-display-area {
+  overflow-y: auto;
+}
+
+.data-display-area.small {
+  max-height: 50vh;
+}
+
+.data-display-area.large {
+  max-height: 90vh;
 }

@@ -12,7 +12,7 @@ const Sidebar = () => {
     const { filteredTimestamps, setSelectedTimestamp } = useData();
 
     return (
-        <div className={styles.sidebar} style={{ overflowY: 'auto', maxHeight: '90vh' }}>
+        <div className={styles.sidebar}>
         <h4>Measurings:</h4>
         {filteredTimestamps.map((timestamp, index) => {
             // assuming the timestamp is in ISO String format
