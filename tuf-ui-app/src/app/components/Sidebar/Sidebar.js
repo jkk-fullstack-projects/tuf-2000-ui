@@ -8,11 +8,15 @@ import { useData } from '../../../context/DataContext';
 import styles from './Sidebar.module.css';
 import { format } from 'date-fns';
 
-const Sidebar = () => {
+const Sidebar = ({ customHeight }) => {
     const { filteredTimestamps, setSelectedTimestamp } = useData();
+    const sidebarStyle = {
+        ...styles.sidebar,
+        maxHeight: customHeight,
+    };
 
     return (
-        <div className={styles.sidebar}>
+        <div className={styles.sidebar} style={sidebarStyle}>
         <h4>Measurings:</h4>
         {filteredTimestamps.map((timestamp, index) => {
             // assuming the timestamp is in ISO String format

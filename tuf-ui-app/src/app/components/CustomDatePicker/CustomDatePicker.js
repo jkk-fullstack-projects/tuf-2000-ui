@@ -74,7 +74,11 @@ const CustomDatePicker = ({ isCalendarVisible, setIsCalendarVisible }) => {
                 </button>
             </div>
             {isCalendarVisible && (
-                <DateRangePicker ranges={dateRange} onChange={handleSelect} />
+                <DateRangePicker 
+                    ranges={dateRange} 
+                    onChange={handleSelect}
+                    rangeColors={['#555', 'white', 'white']}
+                />
             )}
         </div>
     );

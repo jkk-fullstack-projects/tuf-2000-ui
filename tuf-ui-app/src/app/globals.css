@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --sidebar-width: 140px; /* Sidebar width variable */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,52 +20,47 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .app-container {
   display: flex;
-  flex-direction: row; /* Ensure side-by-side layout by default */
+  flex-direction: column;
   min-height: 100vh;
-}
-
-.sidebar {
-  flex: 0 0 220px; 
-  background-color: #111;
-  color: white;
-  padding: 20px;
-  overflow-y: auto; /* Enable scrolling for sidebar */
-}
-
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #f4f4f4;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
-  .app-container {
-    flex-direction: column; /* Stack components on smaller screens */
+  .app-container, .content-area, .main-content {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
   }
-
   .sidebar {
-    flex: 0 0;
     width: 100%;
     padding: 10px;
+    overflow-x: hidden;
   }
-
-  .main-content, .sidebar {
+  
+  data-display-area {
+    flex: none;
     width: 100%;
-    padding: 10px;
+    max-height: unset;
   }
 
   .button, .controlButton {
-    padding: 12px 15px; /* Larger buttons for easier tapping */
+    padding: 12px 15px;
     font-size: 14px;
   }
 
@@ -73,13 +69,15 @@ body {
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
 }
 
 .data-display-area {
+  flex-grow: 1;
   overflow-y: auto;
 }
 

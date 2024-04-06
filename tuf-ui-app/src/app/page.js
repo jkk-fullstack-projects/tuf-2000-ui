@@ -8,19 +8,23 @@ import ShowRawData from "./components/ShowRawData/ShowRawData";
 
 export default function Home() {
   const [isCalendarVisible, setIsCalendarVisible] = useState(true);
+  const sidebarHeight = isCalendarVisible ? "50vh" : "80vh";
+  const dataAreaHeight = isCalendarVisible ? "50vh" : "80vh";
 
   return (
     <DataProvider>
       <div className="app-container">
-        <div className="calendar-and-sidebar">
+        <div className="calendar-and-controls">
           <CustomDatePicker 
             isCalendarVisible={isCalendarVisible} 
             setIsCalendarVisible={setIsCalendarVisible} 
           />
-          <Sidebar />
-        
-          <div className={`data-display-area ${isCalendarVisible ? 'small' : 'large'}`}>
-            <ShowRawData />
+          </div>
+          <div className="content-area">
+            <Sidebar customHeight={sidebarHeight}/>
+            <div className={`data-display-area ${isCalendarVisible ? 'small' : 'large'}`}
+               style={{ maxHeight: dataAreaHeight }}>
+              <ShowRawData />
           </div>
         </div>
       </div>
