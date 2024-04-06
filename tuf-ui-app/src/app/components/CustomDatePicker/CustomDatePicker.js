@@ -19,7 +19,7 @@ import styles from './CustomDatePicker.module.css';
 import { setStartOfDay, setEndOfDay } from '../utils/dateUtils.js';
 
 /**
-* DateRangePicker imported dyanamically: 
+* DateRangePicker imported dynamically: 
 * to be rendered only on client side, to avoid unnecessary SSR issues
 */
 const DateRangePicker = dynamic(() => import('react-date-range')
