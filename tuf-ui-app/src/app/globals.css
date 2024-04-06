@@ -41,34 +41,6 @@ html, body {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  .app-container, .content-area, .main-content {
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-  }
-  .sidebar {
-    width: 100%;
-    padding: 10px;
-    overflow-x: hidden;
-  }
-  
-  data-display-area {
-    flex: none;
-    width: 100%;
-    max-height: unset;
-  }
-
-  .button, .controlButton {
-    padding: 12px 15px;
-    font-size: 14px;
-  }
-
-  h4, .timestamp-item, .data-display {
-    font-size: 14px;
-  }
-}
-
 .content-area {
   flex: 1;
   display: flex;
@@ -87,4 +59,22 @@ html, body {
 
 .data-display-area.large {
   max-height: 90vh;
+}
+
+#sidebar .button {
+  font-size: 12px;
+  padding: 2px 2px;
+  min-width: 80px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar .button {
+    max-height: 50vh;
+    font-size: 12px;
+    padding: 5px 8px;
+    min-width: 120px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
 }
