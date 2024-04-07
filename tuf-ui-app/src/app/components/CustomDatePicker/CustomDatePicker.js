@@ -6,11 +6,10 @@ import 'react-date-range/dist/theme/default.css';
 import styles from './CustomDatePicker.module.css';
 import { setStartOfDay, setEndOfDay } from '../utils/dateUtils.js';
 
-
 const DateRangePicker = dynamic(() => import('react-date-range')
     .then((mod) => mod.DateRangePicker), {ssr: false });
 
-const CustomDatePicker = ({ isCalendarVisible }) => {
+const CustomDatePicker = ({ isCalendarVisible, customHeight }) => {
     const { dateRange, setDateRange } = useContext(DataContext);
 
     const handleSelect = (ranges) => {
@@ -35,7 +34,7 @@ const CustomDatePicker = ({ isCalendarVisible }) => {
     return (
         <div className={styles.datePickerContainer}>
             {isCalendarVisible && (
-                <div className={styles.scrollableContainer}>
+                <div className={styles.scrollableContainer} style={{ maxHeight: customHeight }}>
                     <DateRangePicker 
                         ranges={dateRange} 
                         onChange={handleSelect}

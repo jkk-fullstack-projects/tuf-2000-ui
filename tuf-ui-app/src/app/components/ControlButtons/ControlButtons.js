@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./ControlButtons.module.css";
 
 const ControlButtons = ({
-handleCalendarVisibility,
-  isCalendarVisible,
-  increaseFontSize,
-  decreaseFontSize,
+    handleCalendarVisibility,
+    isCalendarVisible,
+    increaseFontSize,
+    decreaseFontSize,
 }) => {
   return (
     <div className={styles.buttonContainer}>
