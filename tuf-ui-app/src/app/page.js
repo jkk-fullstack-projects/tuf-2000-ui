@@ -18,11 +18,11 @@ export default function Home() {
   useEffect(() => {
     if (!isCalendarVisible) {
         // Reduce the heights to accommodate the calendar being visible or not
-        setSidebarHeight("100vh");
-        setDataAreaHeight("100vh");
+        setSidebarHeight("90vh");
+        setDataAreaHeight("90vh");
     } else {
-        setSidebarHeight("60vh");
-        setDataAreaHeight("60vh");
+        setSidebarHeight("50vh");
+        setDataAreaHeight("50vh");
         setCalendarHeight("80vh");
     }
   }, [isCalendarVisible]);
