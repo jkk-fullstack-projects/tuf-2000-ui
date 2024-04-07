@@ -87,3 +87,19 @@ html, body {
     box-sizing: border-box;
   }
 }
+
+@media screen and (orientation: landscape) and (max-height: 400px) {
+  .calendar-container {
+    overflow-y: auto;
+    max-height: 300px;
+  }
+
+  .timestamps-full-height, .data-section {
+    height: 80vh;
+  }
+
+  .timestamps-reduced-height {
+    height: 50vh;
+  }
+
+}
