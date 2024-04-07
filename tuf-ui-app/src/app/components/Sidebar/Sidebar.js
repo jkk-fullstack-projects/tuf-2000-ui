@@ -16,7 +16,7 @@ const Sidebar = ({ customHeight }) => {
     };
 
     return (
-        <div id= "sidebar" className={styles.sidebar}>
+        <div id= "sidebar" className={styles.sidebar} style={{ maxHeight: customHeight }}>
         <h4>Measures:</h4>
         {filteredTimestamps.map((timestamp, index) => {
             // assuming the timestamp is in ISO String format
