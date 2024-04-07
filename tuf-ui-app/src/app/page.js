@@ -8,8 +8,13 @@ import ShowRawData from "./components/ShowRawData/ShowRawData";
 
 export default function Home() {
   const [isCalendarVisible, setIsCalendarVisible] = useState(true);
+  const [fontSize, setFontSize] = useState(14);
+
   const sidebarHeight = isCalendarVisible ? "50vh" : "80vh";
   const dataAreaHeight = isCalendarVisible ? "50vh" : "80vh";
+  
+  const increaseFontSize = () => setFontSize((prevSize) => prevSize + 1);
+  const decreaseFontSize = () => setFontSize((prevSize) => prevSize - 1);
 
   return (
     <DataProvider>

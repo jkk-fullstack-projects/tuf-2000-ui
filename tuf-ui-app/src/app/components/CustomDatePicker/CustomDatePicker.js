@@ -28,6 +28,9 @@ const DateRangePicker = dynamic(() => import('react-date-range')
 const CustomDatePicker = ({ isCalendarVisible, setIsCalendarVisible }) => {
     const { dateRange, setDateRange } = useContext(DataContext);
 
+    /**
+     * Toggles the visibility of the calendar.
+     */
     const toggleShowCalendar = () => {
         setIsCalendarVisible(!isCalendarVisible);
     };
@@ -60,24 +63,19 @@ const CustomDatePicker = ({ isCalendarVisible, setIsCalendarVisible }) => {
         }]);
     };
     
-    /**
-     * Toggles the visibility of the calendar.
-     */
-    //const toggleShowCalendar = () => setShowCalendar(!showCalendar);
-
     return (
         <div className={styles.datePickerContainer}>
             <div className={styles.controls}>
                 <button onClick={handleClearDates} className={styles.controlButton}>Clear Dates</button>
                 <button onClick={toggleShowCalendar} className={styles.controlButton}>
-                    {isCalendarVisible ? 'Hide Calendar' : 'Show Calendar'}
+                    {isCalendarVisible ? 'Hide Cal' : 'Show Cal'}
                 </button>
             </div>
             {isCalendarVisible && (
                 <DateRangePicker 
                     ranges={dateRange} 
                     onChange={handleSelect}
-                    rangeColors={['#555', 'white', 'white']}
+                    rangeColors={['#555', 'white', '#555']}
                 />
             )}
         </div>

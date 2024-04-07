@@ -24,7 +24,7 @@ const ShowRawData = () => {
       <h5>Meter data for: {formattedDate}</h5>
       {dataToDisplay.map((item, index) => (
         <div key={index}>
-          REGISTER: {item.register} VARIABLE: {item.variableName}: {item.value} {item.unit}
+          REG: {item.register} VAR: {item.variableName}: {item.value} {item.unit}
         </div>
       ))}
     </div>
