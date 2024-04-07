@@ -1,7 +1,7 @@
 import { useData } from '../../../context/DataContext';
 import { format } from 'date-fns';
 
-const ShowRawData = () => {
+const ShowRawData = ({ fontSize }) => {
   const { fetchedData, selectedTimestamp } = useData();
   
   const dataForSelectedTimestamp = fetchedData.find(data => data.timestamp === selectedTimestamp);
@@ -22,11 +22,13 @@ const ShowRawData = () => {
   return (
     <div className="fetched-data">
       <h5>Meter data for: {formattedDate}</h5>
-      {dataToDisplay.map((item, index) => (
-        <div key={index}>
-          REG: {item.register} VAR: {item.variableName}: {item.value} {item.unit}
-        </div>
-      ))}
+      <div style={{ fontSize: `${fontSize}px` }}>
+        {dataToDisplay.map((item, index) => (
+          <div key={index}>
+            REG: {item.register} VAR: {item.variableName}: {item.value} {item.unit}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
