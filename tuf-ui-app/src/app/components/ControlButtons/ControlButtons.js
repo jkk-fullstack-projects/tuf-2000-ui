@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./ControlButtons.module.css";
 
+/**
+ * Displays control buttons for calendar visibility, and font size adjustment.
+ */
+
 const ControlButtons = ({
     handleCalendarVisibility,
     isCalendarVisible,

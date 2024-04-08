@@ -8,6 +8,16 @@ import { useData } from '../../../context/DataContext';
 import styles from './Sidebar.module.css';
 import { format } from 'date-fns';
 
+/**
+ * Sidebar component that displays a list of selectable timestamps.
+ * It allows the user to select a timestamp to view more detailed data.
+ *
+ * @component
+ * @param {Object} props
+ * @param {string} props.customHeight - Custom CSS value for the max-height property of the sidebar.
+ * @returns JSX.Element
+ */
+
 const Sidebar = ({ customHeight }) => {
     const { filteredTimestamps, setSelectedTimestamp } = useData();
     const sidebarStyle = {

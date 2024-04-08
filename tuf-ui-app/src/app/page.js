@@ -1,3 +1,11 @@
+/**
+ * The Home component serves as the main entry point for the TUF-2000M measurement data display application.
+ * It orchestrates the layout and interaction between the calendar, sidebar, and data display components.
+ * 
+ * @component
+ * @example
+ * return <Home />;
+ */
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -15,6 +23,9 @@ export default function Home() {
   const [dataAreaHeight, setDataAreaHeight] = useState("50vh");
   const [calendarHeight, setCalendarHeight] = useState("50vh");
 
+  /**
+   * Adjusts the height of sidebar and data display area based on calendar visibility.
+   */
   useEffect(() => {
     if (!isCalendarVisible) {
         // Reduce the heights to accommodate the calendar being visible or not
@@ -27,12 +38,22 @@ export default function Home() {
     }
   }, [isCalendarVisible]);
 
+  /**
+   * Toggles the visibility of the calendar view.
+   */
   const toggleCalendarVisibility = () => {
     console.log("Calendar visibility toggling to:", !isCalendarVisible);
     setIsCalendarVisible(!isCalendarVisible);
   };
 
+  /**
+   * Increases the font size for the data display area.
+   */
   const increaseFontSize = () => setFontSize(fontSize + 1);
+
+  /**
+   * Decreases the font size for the data display area, with a minimum limit.
+   */
   const decreaseFontSize = () => setFontSize(fontSize > 1 ? fontSize - 1 : 1);
 
   return (

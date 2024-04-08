@@ -9,8 +9,25 @@ import { setStartOfDay, setEndOfDay } from '../utils/dateUtils.js';
 const DateRangePicker = dynamic(() => import('react-date-range')
     .then((mod) => mod.DateRangePicker), {ssr: false });
 
+/**
+ * Custom date picker component that allows users to select date ranges.
+ * Utilizes context for state management and dynamic imports for SSR compatibility.
+ *
+ * @component
+ * @param {Object} props
+ * @param {boolean} props.isCalendarVisible - Controls the visibility of the calendar.
+ * @param {string} props.customHeight - Custom CSS height value for the calendar container.
+ */
+
 const CustomDatePicker = ({ isCalendarVisible, customHeight }) => {
     const { dateRange, setDateRange } = useContext(DataContext);
+
+    /**
+     * Handles date range selection from the DateRangePicker component.
+     * Adjusts the start and end dates to the start/end of day for consistency.
+     *
+     * @param {Object} ranges - The selected date range from the picker.
+     */
 
     const handleSelect = (ranges) => {
         const adjustedRange = {
@@ -21,6 +38,9 @@ const CustomDatePicker = ({ isCalendarVisible, customHeight }) => {
         setDateRange([adjustedRange]);
     };
 
+    /**
+     * Resets the selected date range to today's date.
+     */
     const handleClearDates = () => {
         console.log('Clearing Dates');
         const today = new Date();

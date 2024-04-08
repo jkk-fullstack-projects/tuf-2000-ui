@@ -1,7 +1,17 @@
 import { useData } from '../../../context/DataContext';
 import { format } from 'date-fns';
 
-const ShowRawData = ({ fontSize, customHeight }) => {
+/**
+ * Component to display fetched data based on the selected timestamp.
+ * Utilizes DataContext for state management and date-fns for date formatting.
+ *
+ * @component
+ * @param {Object} props
+ * @param {number} props.fontSize - The font size to be applied to the displayed data.
+ * @returns JSX.Element
+ */
+
+const ShowRawData = ({ fontSize }) => {
   const { fetchedData, selectedTimestamp } = useData();
   
   const dataForSelectedTimestamp = fetchedData.find(data => data.timestamp === selectedTimestamp);
@@ -20,10 +30,9 @@ const ShowRawData = ({ fontSize, customHeight }) => {
   const dataToDisplay = dataForSelectedTimestamp.data;
 
   return (
-    <div className="fetched-data" style={{ maxHeight: customHeight }}>
-      
+    <div className="fetched-data">
+      <h5><strong>Data at: {formattedDate}</strong></h5>
       <div style={{ fontSize: `${fontSize}px` }}>
-        <h4><strong>METER DATA: {formattedDate}</strong></h4>
         {dataToDisplay.map((item, index) => (
           <div key={index}>
             REG: {item.register} VAR: {item.variableName}: {item.value} {item.unit}
