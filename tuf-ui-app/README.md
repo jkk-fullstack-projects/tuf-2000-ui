@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## See the app in action:
+
+Navigate to: https://tuf-2000-ui.vercel.app
+
+Please do not give the link to unauthorized users.
+
 ## Please note:
 
 Further down this document you can find user guide and description of design choices made with this app.
