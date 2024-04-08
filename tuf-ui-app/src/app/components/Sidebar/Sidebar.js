@@ -17,7 +17,7 @@ const Sidebar = ({ customHeight }) => {
 
     return (
         <div id= "sidebar" className={styles.sidebar} style={{ maxHeight: customHeight }}>
-        <h4>Measures:</h4>
+        <h4><strong>Times:</strong></h4>
         {filteredTimestamps.map((timestamp, index) => {
             // assuming the timestamp is in ISO String format
             const formattedDate = format(new Date(timestamp), 'yyyy-MM-dd');
@@ -28,7 +28,7 @@ const Sidebar = ({ customHeight }) => {
                     style={{
                         fontSize: '12px',
                         padding: '2px 2px',
-                        minWidth: '80px',
+                        minWidth: '90px',
                         boxSizing: 'border-box',
                     }}
                     key={index}
