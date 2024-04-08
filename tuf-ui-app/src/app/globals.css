@@ -73,18 +73,16 @@ html, body {
 #sidebar .button {
   font-size: 12px;
   padding: 2px 2px;
-  min-width: 80px;
-  box-sizing: border-box;
+  min-width: 100px;
 }
 
 @media screen and (max-width: 768px) {
   .sidebar .button {
     max-height: 50vh;
     font-size: 12px;
-    padding: 5px 8px;
-    min-width: 130px;
+    padding: 3px 4px;
+    min-width: 100px;
     overflow-y: auto;
-    box-sizing: border-box;
   }
 }
 

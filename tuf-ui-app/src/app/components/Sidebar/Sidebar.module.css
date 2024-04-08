@@ -20,8 +20,7 @@
   border-radius: 5px;
   transition-duration: 0.4s ease;
   white-space: nowrap;
-  box-sizing: border-box;
-  min-width: 120px;
+  min-width: 100px;
   width: 100%;
 }
 
