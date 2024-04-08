@@ -28,7 +28,7 @@ const Sidebar = ({ customHeight }) => {
                     style={{
                         fontSize: '12px',
                         padding: '2px 2px',
-                        minWidth: '90px',
+                        minWidth: '120px',
                         boxSizing: 'border-box',
                     }}
                     key={index}
