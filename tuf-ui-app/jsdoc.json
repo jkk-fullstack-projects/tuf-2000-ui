@@ -1,0 +1,19 @@
+{
+    "source": {
+      "include": [
+        "src/app/page.js",
+        "src/app/components",
+        "src/context",
+        "src/pages",
+        "src/services",
+        "src/utils"
+    ],
+      "exclude": ["src/app/out"],
+      "includePattern": ".+\\.js(doc|x)?$",
+      "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "opts": {
+      "recurse": true,
+      "destination": "./docs/"
+    }
+  }
