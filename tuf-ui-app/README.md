@@ -1,8 +1,44 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Please note:
 
-Please note: Further down this document you can find user guide and description of design choices made with this app.
+Further down this document you can find user guide and description of design choices made with this app.
+
+## JSDocs
+
+## To see the JSDocs documentation of this project
+
+This project includes documentation generated with JSDoc, providing information on the usage, parameters, and functionality of the components and utilities. Here's how to access and use the documentation:
+
+## Accessing the Documentation
+
+Local Setup: To view the documentation, ensure you have the project files on your local machine. If not already done, clone the repository or download the source code.
+
+## Navigate to Documentation:
+
+The documentation is located in the docs/ directory at the root of the project.
+
+## Open in Browser:
+
+Open the index.html file within the docs/ directory in your web browser to start exploring the documentation. You can do this by either double-clicking the file (depending on your OS settings) or by opening your browser and using the File > Open menu to navigate to the file.
+
+## Navigating the Documentation
+
+Global Index: The main page provides a global index of all documented elements, including classes, modules, namespaces, and more. Use this as a starting point to explore the documentation.
+
+## Search:
+
+Use the search bar at the top of the documentation pages to quickly find specific items.
+
+## Side Navigation:
+
+The side navigation bar lists all the documented entities, categorized for easy access. Click on any item to view its details, including descriptions, parameters, examples, and more.
+
+## Breadcrumb Navigation:
+
+At the top of each documentation page, breadcrumbs are provided to help you keep track of your current location within the documentation hierarchy and navigate easily.
+
+## Getting Started and installing
 
 First, run the development server:
 
@@ -37,7 +73,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## tuf-2000-ui
+## GUIDE to tuf-2000m-ui
 
 ## Recommended use
 
