@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 import dynamic from 'next/dynamic';
 import { DataContext } from '../../../context/DataContext.js';
 import 'react-date-range/dist/styles.css';

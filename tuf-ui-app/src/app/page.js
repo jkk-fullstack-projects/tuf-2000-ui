@@ -1,3 +1,12 @@
+"use client";
+
+import React, { useEffect, useState } from 'react';
+import { DataProvider } from '../context/DataContext';
+import ControlButtons from './components/ControlButtons/ControlButtons';
+import CustomDatePicker from './components/CustomDatePicker/CustomDatePicker';
+import Sidebar from './components/Sidebar/Sidebar';
+import ShowRawData from './components/ShowRawData/ShowRawData';
+
 /**
  * The Home component serves as the main entry point for the TUF-2000M measurement data display application.
  * It orchestrates the layout and interaction between the calendar, sidebar, and data display components.
@@ -6,14 +15,6 @@
  * @example
  * return <Home />;
  */
-"use client";
-
-import React, { useEffect, useState } from "react";
-import { DataProvider } from "../context/DataContext";
-import ControlButtons from "./components/ControlButtons/ControlButtons";
-import CustomDatePicker from "./components/CustomDatePicker/CustomDatePicker";
-import Sidebar from "./components/Sidebar/Sidebar";
-import ShowRawData from "./components/ShowRawData/ShowRawData";
 
 export default function Home() {
   const [isCalendarVisible, setIsCalendarVisible] = useState(true);
