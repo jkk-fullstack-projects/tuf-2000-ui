@@ -20,9 +20,10 @@ const ShowRawData = ({ fontSize }) => {
   if (!dataForSelectedTimestamp) {
     return (
     <div>
+      <p>UI to show mock TUF-2000M data from a cloud database.</p>
       <p>No data available for the selected timestamp.</p>
       <p>Please choose a date between March 4, 2024, and April 2, 2024,</p>
-      <p>or select a specific timestamp from the sidebar on the left.</p>
+      <p>then select a timestamp from the sidebar on the left to view data.</p>
     </div>
     );
 }

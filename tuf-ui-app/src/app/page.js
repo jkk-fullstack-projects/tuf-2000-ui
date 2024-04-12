@@ -17,7 +17,7 @@ import ShowRawData from './components/ShowRawData/ShowRawData';
  */
 
 export default function Home() {
-  const [isCalendarVisible, setIsCalendarVisible] = useState(true);
+  const [isCalendarVisible, setIsCalendarVisible] = useState(false);
   const [fontSize, setFontSize] = useState(14);
 
   const [sidebarHeight, setSidebarHeight] = useState("50vh");

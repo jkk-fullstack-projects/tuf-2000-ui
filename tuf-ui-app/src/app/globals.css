@@ -76,13 +76,39 @@ html, body {
   min-width: 100px;
 }
 
+.sidebar {
+  overflow-x: auto;
+}
+
+.button {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 768px) {
-  .sidebar .button {
+  /*.sidebar .button {
     max-height: 50vh;
     font-size: 12px;
     padding: 3px 4px;
     min-width: 100px;
     overflow-y: auto;
+  }*/
+  .data-display-area {
+    font-size: smaller;
+  }
+  #sidebar .button {
+    font-size: 10px;
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .data-display-area {
+    font-size: 10px;
+  }
+  #sidebar .button {
+    font-size: 9px;
+    padding: 2px;
+    min-width: 80px;
   }
 }
 
